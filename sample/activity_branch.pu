@@ -1,0 +1,12 @@
+@startuml
+(*)-->"Initialize"
+
+if "Sum Test" then
+ -->[true] "Some Activity"
+ -->"Another activity"
+ -right->(*)
+else
+ ->[false] "Something else"
+ -->[ending process](*)
+endif
+@enduml

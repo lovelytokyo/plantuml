@@ -1,0 +1,11 @@
+@startuml{you&i.png}
+you -> I : hello
+I -> you : hello
+|||
+loop 1, 3
+  you -> I : shall we dance?
+end
+|||
+you <- I : sure, my pleasure♡
+note right: oh! handsome guy♪
+@enduml
