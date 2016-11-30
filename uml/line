@@ -1,0 +1,11 @@
+@startuml
+==Initialize==
+
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+==Repetition==
+
+Alice -> Bob: Another Authentication Request
+Bob --> Alice: Another Authentication Response
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+[-> A : DoWork
+activate A #FFBBBB
+
+A -> A : Internal call
+activate A #DarkSalmon
+
+A ->] : <<createRequest>>
+
+A <--] : RequestCreated
+deactivate A
+
+[<- A : Done
+deactivate A
+
+@enduml

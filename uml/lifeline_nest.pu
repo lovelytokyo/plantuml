@@ -1,0 +1,20 @@
+@startuml
+participant User
+
+User -> A : DoWork
+activate A #FFBBBB
+
+A -> A : Internal call
+activate A #DarkSalmon
+
+A -> B : <<createRequest>>
+activate B
+
+A <-- B : RequestCreated
+deactivate B
+deactivate A
+
+User <- A : Done
+deactivate A
+
+@enduml
